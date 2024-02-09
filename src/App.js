@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import "./Css/styles.css" ; 
+import "./Css/styles1.css";
+import "./App.css";
+import Navbar from './Component/Navbar/Navbar.jsx'
+import Sidebar from './Component/Sidebar/Sidebar.jsx';
+import Header from './Component/Layourt/Header.jsx';
+import Home from './Component/Layourt/Home/Home.jsx';
+import Stockinventory from './Component/Stockinventory/Stockinventory.jsx';
+
+
+
+
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-container'>
+      <Navbar/>
+      <div className="app-page-div">
+        <section className="app-sidebar">
+          <Sidebar/>
+        </section>
+        <section className="app-Home">
+          <div className="header-div-fixed">
+          <Header/>
+          </div>
+          <div className="home-layout">
+            <div className="app-home-section">
+          <Home/>
+            </div>
+          <div className="app-right-sidebar">
+          <Stockinventory/>
+          </div>
+          </div>
+        </section>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
