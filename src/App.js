@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import PuchaseReturn from "./pages/vyapar/purchase return/PurchaseReturn";
+import PaymentOut from "./pages/vyapar/payment out/PaymentOut";
+import Purchase from "./pages/vyapar/add purchase/Purchase";
+import PurchaseBill from "./pages/vyapar/purchase bill/PurchaseBill";
+import FirstPurchase from "./pages/vyapar/first purchase/FirstPurchase";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/first-purchase" element={<FirstPurchase/>}/>
+        <Route path="/payment-out" element={<PaymentOut />} />
+        <Route path="/purchase" element={<Purchase/>}/>
+        <Route path="/puchase-return" element={<PuchaseReturn/>}/>
+        {/* <Route path="/purchase-bill" element={<PurchaseBill />} /> */}
+        <Route path="/" element={<PurchaseBill />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
