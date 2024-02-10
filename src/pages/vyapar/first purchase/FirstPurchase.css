@@ -1,0 +1,58 @@
+.main-v{
+    display: flex;
+    flex-direction: column;     
+}
+
+.Upper{
+padding: 20px 30px;
+display: flex;
+justify-content: space-between;
+}
+.Upper input{
+    font-size: 20px;
+    width: 90%;
+    outline: none;
+    border: none;
+border-bottom: 1px solid grey;
+}
+.Upper button{
+    background: blue;
+    border: none;
+    padding: 5px 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: wheat;
+}
+
+.middle{
+    text-align: center;
+    background: rgb(255, 250, 250);
+    padding: 20px;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lower p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.lower button{
+    font-size: 15px;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    color: white;
+    background: rgb(208, 143, 44);
+    /* width: 90%; */
+    margin: auto;
+    outline: none;
+    border: none;
+border-bottom: 1px solid grey;
+}
+
+
+

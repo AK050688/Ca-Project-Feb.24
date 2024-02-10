@@ -1,0 +1,19 @@
+.top{
+    padding: 20px;
+
+}
+.section{
+    background: #dadada;
+    height: 90vh;
+}
+.section select{
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 110px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 2px;
+      border: 2px solid #dadada;
+}
